@@ -21,3 +21,15 @@ jobs:
       - name: run lintcheck
         run: cargo lintcheck
         working-directory: rust-clippy
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          cp rust-clippy/lintcheck-logs/lintcheck_crates_logs.txt ../lintcheck_default_crates_logs.txt
+          git add lintcheck_default_crates_logs.txt
+          git commit -m "update logs"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.LINTCHECK_TOKEN }}
+          branch: ${{ github.ref }}
