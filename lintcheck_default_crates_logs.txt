@@ -1,4 +1,4 @@
-clippy 0.1.53 (6f2a6fe 2021-03-26)
+clippy 0.1.53 (8e56a2b 2021-03-27)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
