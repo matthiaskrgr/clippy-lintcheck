@@ -28,6 +28,7 @@ jobs:
           cp rust-clippy/lintcheck-logs/lintcheck_crates_logs.txt lintcheck_default_crates_logs.txt
           git add lintcheck_default_crates_logs.txt || true
           git commit -m "update logs" || true
+        if: "!git diff --exit-code"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
