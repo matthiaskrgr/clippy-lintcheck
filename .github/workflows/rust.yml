@@ -21,6 +21,9 @@ jobs:
       - name: run lintcheck
         run: cargo lintcheck
         working-directory: rust-clippy
+      - name: run lintcheck extended
+        run: cargo lintcheck -- --crates-toml ../extended_crates.toml
+        working-directory: rust-clippy
       - name: check if repo is untouched
         id: repo_untouched
         run: git diff --exit-code
@@ -30,7 +33,9 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           cp rust-clippy/lintcheck-logs/lintcheck_crates_logs.txt lintcheck_default_crates_logs.txt
+          cp rust-clippy/lintcheck-logs/extended_crates_logs.txt extended_crates_logs.txt
           git add lintcheck_default_crates_logs.txt || true
+          git add extended_crates_logs.txt || true
           git commit -m "update logs" || true
         if: steps.repo_untouched.outputs.exit_code != 0
       - name: Push changes
