@@ -39,10 +39,10 @@ jobs:
           git add lintcheck_default_crates_logs.txt || true
           git add extended_crates_logs.txt || true
           git commit -m "update logs" || true
-        if: steps.repo_untouched.outputs.exit_code != 0
+        if: steps.repo_untouched.outputs.exit_code == 0
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: steps.repo_untouched.outputs.exit_code != 0
+        if: steps.repo_untouched.outputs.exit_code == 0
         with:
           github_token: ${{ secrets.LINTCHECK_TOKEN }}
           branch: ${{ github.ref }}
