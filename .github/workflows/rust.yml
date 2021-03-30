@@ -22,7 +22,7 @@ jobs:
         run: cargo lintcheck
         working-directory: rust-clippy
       - name: run lintcheck extended
-        run: cargo lintcheck -- --crates-toml ../extended_crates.toml
+        run: ./lintcheck/target/debug/lintcheck --crates-toml ../extended_crates.toml
         working-directory: rust-clippy
       - name: check if repo is untouched
         id: repo_untouched
