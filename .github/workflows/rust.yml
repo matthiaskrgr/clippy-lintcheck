@@ -24,6 +24,10 @@ jobs:
       - name: run lintcheck extended
         run: ./lintcheck/target/debug/lintcheck --crates-toml ../extended_crates.toml
         working-directory: rust-clippy
+      - name: copy logs
+        run: |
+          cp -f rust-clippy/lintcheck-logs/lintcheck_crates_logs.txt lintcheck_default_crates_logs.txt
+          cp -f rust-clippy/lintcheck-logs/extended_crates_logs.txt extended_crates_logs.txt
       - name: check if logs are untouched
         id: repo_untouched
         run: git diff --exit-code lintcheck_default_crates_logs.txt extended_crates_logs.txt
@@ -32,8 +36,6 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          cp rust-clippy/lintcheck-logs/lintcheck_crates_logs.txt lintcheck_default_crates_logs.txt
-          cp rust-clippy/lintcheck-logs/extended_crates_logs.txt extended_crates_logs.txt
           git add lintcheck_default_crates_logs.txt || true
           git add extended_crates_logs.txt || true
           git commit -m "update logs" || true
