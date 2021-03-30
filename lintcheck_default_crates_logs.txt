@@ -1,4 +1,4 @@
-clippy 0.1.53 (a521445 2021-03-30)
+clippy 0.1.53 (0552852 2021-03-30)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -1494,6 +1494,7 @@ target/lintcheck/sources/cfg-expr-0.7.1/src/expr/parser.rs:292:21 clippy::unnest
 target/lintcheck/sources/cfg-expr-0.7.1/src/expr/parser.rs:347:21 clippy::unnested_or_patterns "unnested or-patterns"
 target/lintcheck/sources/cfg-expr-0.7.1/src/expr/parser.rs:390:9 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/cfg-expr-0.7.1/src/expr/parser.rs:392:17 clippy::if_not_else "unnecessary `!=` operation"
+target/lintcheck/sources/cfg-expr-0.7.1/src/expr/parser.rs:39:31 clippy::too_many_lines "this function has too many lines (136/100)"
 target/lintcheck/sources/cfg-expr-0.7.1/src/expr/parser.rs:67:13 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
 target/lintcheck/sources/cfg-expr-0.7.1/src/lib.rs:1:null clippy::cargo_common_metadata "package `cfg-expr` is missing `package.categories` metadata"
 target/lintcheck/sources/cfg-expr-0.7.1/src/targets/builtins.rs:11:5 clippy::wildcard_imports "usage of wildcard import"
@@ -3836,7 +3837,7 @@ clippy::default_trait_access 26
 clippy::let_underscore_drop 26
 clippy::trivially_copy_pass_by_ref 26
 clippy::redundant_else 29
-clippy::too_many_lines 35
+clippy::too_many_lines 36
 clippy::if_not_else 38
 clippy::unseparated_literal_suffix 41
 clippy::cast_precision_loss 44
