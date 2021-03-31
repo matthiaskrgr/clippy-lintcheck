@@ -1,4 +1,4 @@
-clippy 0.1.53 (4be72b0 2021-03-30)
+clippy 0.1.53 (3e42c35 2021-03-31)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -3482,7 +3482,6 @@ target/lintcheck/sources/ripgrep-12.1.1/crates/core/messages.rs:62:1 clippy::mod
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/path_printer.rs:27:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/path_printer.rs:89:9 clippy::if_not_else "unnecessary boolean `not` operation"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:185:1 clippy::module_name_repetitions "item name starts with its containing module's name"
-target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:224:5 clippy::upper_case_acronyms "name `JSON` contains a capitalized acronym"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:292:9 clippy::write_with_newline "using `write!()` with a format string that ends in a single newline"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:311:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:377:12 clippy::nonminimal_bool "this boolean expression can be simplified"
@@ -3537,7 +3536,6 @@ target/lintcheck/sources/syn-1.0.54/src/token.rs:311:30 clippy::wrong_self_conve
 target/lintcheck/sources/syn-1.0.54/src/token.rs:446:30 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
 target/lintcheck/sources/syn-1.0.54/src/token.rs:563:18 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
 target/lintcheck/sources/syn-1.0.54/src/token.rs:974:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
-target/lintcheck/sources/tame-oidc-0.1.0/src/errors.rs:9:5 clippy::upper_case_acronyms "name `HTTP` contains a capitalized acronym"
 target/lintcheck/sources/tame-oidc-0.1.0/src/lib.rs:1:null clippy::cargo_common_metadata "package `tame-oidc` is missing `package.categories` metadata"
 target/lintcheck/sources/tame-oidc-0.1.0/src/oidc.rs:111:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/tame-oidc-0.1.0/src/oidc.rs:127:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -3761,6 +3759,7 @@ clippy::should_implement_trait 1
 clippy::stable_sort_primitive 1
 clippy::unnecessary_lazy_evaluations 1
 clippy::unsafe_derive_deserialize 1
+clippy::upper_case_acronyms 1
 clippy::used_underscore_binding 1
 clippy::verbose_bit_mask 1
 clippy::while_let_on_iterator 1
@@ -3787,7 +3786,6 @@ clippy::inconsistent_struct_constructor 3
 clippy::manual_map 3
 clippy::mut_mut 3
 clippy::ptr_arg 3
-clippy::upper_case_acronyms 3
 clippy::zero_ptr 3
 clippy::mem_replace_with_default 4
 clippy::too_many_arguments 4
