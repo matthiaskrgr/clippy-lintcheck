@@ -1,4 +1,4 @@
-clippy 0.1.53 (8cf7d9b 2021-03-31)
+clippy 0.1.53 (92c4fc3 2021-04-01)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -2389,10 +2389,6 @@ target/lintcheck/sources/quote-1.0.7/src/runtime.rs:52:5 clippy::module_name_rep
 target/lintcheck/sources/quote-1.0.7/src/runtime.rs:63:5 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/quote-1.0.7/src/runtime.rs:66:33 clippy::doc_markdown "you should put `DoesNotHaveIter` between ticks in the documentation"
 target/lintcheck/sources/quote-1.0.7/src/runtime.rs:80:5 clippy::module_name_repetitions "item name ends with its containing module's name"
-target/lintcheck/sources/quote-1.0.7/src/to_tokens.rs:132:26 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
-target/lintcheck/sources/quote-1.0.7/src/to_tokens.rs:159:18 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
-target/lintcheck/sources/quote-1.0.7/src/to_tokens.rs:165:18 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
-target/lintcheck/sources/quote-1.0.7/src/to_tokens.rs:80:18 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
 target/lintcheck/sources/rand-0.7.3/src/distributions/bernoulli.rs:103:20 clippy::cast_possible_truncation "casting `f64` to `u64` may truncate the value"
 target/lintcheck/sources/rand-0.7.3/src/distributions/bernoulli.rs:103:20 clippy::cast_sign_loss "casting `f64` to `u64` may lose the sign of the value"
 target/lintcheck/sources/rand-0.7.3/src/distributions/bernoulli.rs:116:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -2855,7 +2851,6 @@ target/lintcheck/sources/rayon-1.5.0/src/iter/positions.rs:1:5 clippy::wildcard_
 target/lintcheck/sources/rayon-1.5.0/src/iter/positions.rs:2:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/iter/product.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/iter/reduce.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
-target/lintcheck/sources/rayon-1.5.0/src/iter/reduce.rs:67:19 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
 target/lintcheck/sources/rayon-1.5.0/src/iter/repeat.rs:103:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/rayon-1.5.0/src/iter/repeat.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/iter/repeat.rs:2:5 clippy::wildcard_imports "usage of wildcard import"
@@ -2882,9 +2877,7 @@ target/lintcheck/sources/rayon-1.5.0/src/iter/try_fold.rs:190:1 clippy::module_n
 target/lintcheck/sources/rayon-1.5.0/src/iter/try_fold.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/iter/try_fold.rs:2:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/iter/try_reduce.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
-target/lintcheck/sources/rayon-1.5.0/src/iter/try_reduce.rs:74:19 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
 target/lintcheck/sources/rayon-1.5.0/src/iter/try_reduce_with.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
-target/lintcheck/sources/rayon-1.5.0/src/iter/try_reduce_with.rs:69:19 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
 target/lintcheck/sources/rayon-1.5.0/src/iter/unzip.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/iter/unzip.rs:2:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/iter/update.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
@@ -3523,18 +3516,11 @@ target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:952:13 clippy::let_undersco
 target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:986:13 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/serde_yaml-0.8.17/src/lib.rs:1:null clippy::cargo_common_metadata "package `serde_yaml` is missing `package.categories` metadata"
 target/lintcheck/sources/syn-1.0.54/build.rs:1:null clippy::cargo_common_metadata "package `syn` is missing `package.keywords` metadata"
-target/lintcheck/sources/syn-1.0.54/src/custom_keyword.rs:177:26 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
 target/lintcheck/sources/syn-1.0.54/src/gen/clone.rs:1900:13 clippy::match_wildcard_for_single_variants "wildcard matches only a single variant and will also match any future added variants"
-target/lintcheck/sources/syn-1.0.54/src/generics.rs:1227:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
 target/lintcheck/sources/syn-1.0.54/src/lib.rs:1:null clippy::cargo_common_metadata "package `syn` is missing `package.keywords` metadata"
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:1397:40 clippy::redundant_else "redundant else block"
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:1405:28 clippy::redundant_else "redundant else block"
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:1485:32 clippy::redundant_else "redundant else block"
-target/lintcheck/sources/syn-1.0.54/src/op.rs:190:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
-target/lintcheck/sources/syn-1.0.54/src/op.rs:226:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
-target/lintcheck/sources/syn-1.0.54/src/token.rs:311:30 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
-target/lintcheck/sources/syn-1.0.54/src/token.rs:446:30 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
-target/lintcheck/sources/syn-1.0.54/src/token.rs:563:18 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is `Copy`) usually take `self` by value"
 target/lintcheck/sources/syn-1.0.54/src/token.rs:974:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
 target/lintcheck/sources/tame-oidc-0.1.0/src/lib.rs:1:null clippy::cargo_common_metadata "package `tame-oidc` is missing `package.categories` metadata"
 target/lintcheck/sources/tame-oidc-0.1.0/src/oidc.rs:111:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -3844,8 +3830,8 @@ clippy::single_match_else 48
 clippy::inline_always 59
 clippy::missing_panics_doc 59
 clippy::match_same_arms 62
+clippy::wrong_self_convention 80
 clippy::similar_names 83
-clippy::wrong_self_convention 94
 clippy::cast_possible_truncation 95
 clippy::redundant_field_names 111
 clippy::redundant_closure_for_method_calls 131
