@@ -1,4 +1,4 @@
-clippy 0.1.53 (72eb60a 2021-04-01)
+clippy 0.1.53 (1931db2 2021-04-02)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -965,7 +965,6 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:510:1 clippy::mi
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:529:5 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:53:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:53:1 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
-target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:573:17 clippy::match_wildcard_for_single_variants "wildcard matches only a single variant and will also match any future added variants"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:573:22 clippy::match_same_arms "this `match` has identical arm bodies"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:608:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:621:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -3516,7 +3515,6 @@ target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:952:13 clippy::let_undersco
 target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:986:13 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/serde_yaml-0.8.17/src/lib.rs:1:null clippy::cargo_common_metadata "package `serde_yaml` is missing `package.categories` metadata"
 target/lintcheck/sources/syn-1.0.54/build.rs:1:null clippy::cargo_common_metadata "package `syn` is missing `package.keywords` metadata"
-target/lintcheck/sources/syn-1.0.54/src/gen/clone.rs:1900:13 clippy::match_wildcard_for_single_variants "wildcard matches only a single variant and will also match any future added variants"
 target/lintcheck/sources/syn-1.0.54/src/lib.rs:1:null clippy::cargo_common_metadata "package `syn` is missing `package.keywords` metadata"
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:1397:40 clippy::redundant_else "redundant else block"
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:1405:28 clippy::redundant_else "redundant else block"
@@ -3794,11 +3792,11 @@ clippy::range_plus_one 7
 clippy::invalid_upcast_comparisons 8
 clippy::needless_question_mark 8
 clippy::len_without_is_empty 9
+clippy::match_wildcard_for_single_variants 9
 clippy::multiple_crate_versions 9
 clippy::manual_range_contains 10
 clippy::missing_safety_doc 10
 clippy::needless_doctest_main 10
-clippy::match_wildcard_for_single_variants 11
 clippy::needless_lifetimes 12
 clippy::linkedlist 14
 clippy::single_char_add_str 14
