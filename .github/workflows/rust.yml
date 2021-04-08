@@ -19,10 +19,10 @@ jobs:
       - name: clone clippy
         run: git clone https://github.com/rust-lang/rust-clippy rust-clippy --depth 10
       - name: run lintcheck
-        run: cargo lintcheck -j 2
+        run: cargo lintcheck
         working-directory: rust-clippy
       - name: run lintcheck extended
-        run: ./lintcheck/target/debug/lintcheck --crates-toml ../extended_crates.toml -j 2
+        run: ./lintcheck/target/debug/lintcheck --crates-toml ../extended_crates.toml
         working-directory: rust-clippy
       - name: copy logs
         run: |
