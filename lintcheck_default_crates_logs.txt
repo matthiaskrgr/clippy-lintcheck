@@ -1,4 +1,4 @@
-clippy 0.1.53 (a6b514c 2021-04-11)
+clippy 0.1.53 (411c0df 2021-04-12)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -3497,14 +3497,6 @@ target/lintcheck/sources/rpmalloc-0.2.0/src/lib.rs:71:73 clippy::doc_markdown "y
 target/lintcheck/sources/rpmalloc-0.2.0/src/lib.rs:72:50 clippy::doc_markdown "you should put bare URLs between `<`/`>` or make a proper Markdown link"
 target/lintcheck/sources/rpmalloc-0.2.0/src/lib.rs:92:9 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/rpmalloc-0.2.0/src/lib.rs:95:21 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
-target/lintcheck/sources/serde-1.0.118/src/de/from_primitive.rs:103:24 clippy::wrong_self_convention "methods called `from_*` usually take no `self`"
-target/lintcheck/sources/serde-1.0.118/src/de/from_primitive.rs:107:25 clippy::wrong_self_convention "methods called `from_*` usually take no `self`"
-target/lintcheck/sources/serde-1.0.118/src/de/from_primitive.rs:111:25 clippy::wrong_self_convention "methods called `from_*` usually take no `self`"
-target/lintcheck/sources/serde-1.0.118/src/de/from_primitive.rs:115:25 clippy::wrong_self_convention "methods called `from_*` usually take no `self`"
-target/lintcheck/sources/serde-1.0.118/src/de/from_primitive.rs:48:24 clippy::wrong_self_convention "methods called `from_*` usually take no `self`"
-target/lintcheck/sources/serde-1.0.118/src/de/from_primitive.rs:52:25 clippy::wrong_self_convention "methods called `from_*` usually take no `self`"
-target/lintcheck/sources/serde-1.0.118/src/de/from_primitive.rs:56:25 clippy::wrong_self_convention "methods called `from_*` usually take no `self`"
-target/lintcheck/sources/serde-1.0.118/src/de/from_primitive.rs:60:25 clippy::wrong_self_convention "methods called `from_*` usually take no `self`"
 target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:1592:9 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:1616:9 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:1627:9 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
@@ -3825,7 +3817,7 @@ clippy::single_match_else 48
 clippy::missing_panics_doc 57
 clippy::inline_always 59
 clippy::match_same_arms 62
-clippy::wrong_self_convention 80
+clippy::wrong_self_convention 72
 clippy::similar_names 83
 clippy::cast_possible_truncation 95
 clippy::redundant_field_names 111
