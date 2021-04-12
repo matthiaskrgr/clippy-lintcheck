@@ -1,4 +1,4 @@
-clippy 0.1.53 (67fad01 2021-04-11)
+clippy 0.1.53 (a6b514c 2021-04-11)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -788,7 +788,6 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/core/workspace.rs:420:17 clippy:
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/workspace.rs:440:9 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Result`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/workspace.rs:511:32 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/workspace.rs:561:25 clippy::non_ascii_literal "literal non-ASCII character detected"
-target/lintcheck/sources/cargo-0.49.0/src/cargo/core/workspace.rs:613:13 clippy::filter_map "called `filter_map(..).map(..)` on an `Iterator`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/workspace.rs:615:22 clippy::redundant_closure_for_method_calls "redundant closure"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/workspace.rs:762:27 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/workspace.rs:784:17 clippy::if_not_else "unnecessary boolean `not` operation"
@@ -999,7 +998,6 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/tree/graph.rs:129:26 clippy:
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/tree/graph.rs:137:17 clippy::match_wildcard_for_single_variants "wildcard matches only a single variant and will also match any future added variants"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/tree/graph.rs:152:15 clippy::match_on_vec_items "indexing into a vector may panic"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/tree/graph.rs:173:9 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
-target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/tree/graph.rs:234:46 clippy::filter_map "called `filter(..).flat_map(..)` on an `Iterator`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/tree/graph.rs:328:44 clippy::match_same_arms "this `match` has identical arm bodies"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/tree/graph.rs:330:50 clippy::match_same_arms "this `match` has identical arm bodies"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/tree/graph.rs:563:35 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
@@ -3747,7 +3745,6 @@ clippy::used_underscore_binding 1
 clippy::verbose_bit_mask 1
 clippy::while_let_on_iterator 1
 clippy::comparison_to_empty 2
-clippy::filter_map 2
 clippy::from_over_into 2
 clippy::len_zero 2
 clippy::manual_non_exhaustive 2
