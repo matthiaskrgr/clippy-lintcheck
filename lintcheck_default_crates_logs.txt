@@ -1,4 +1,4 @@
-clippy 0.1.53 (b1c675f 2021-04-14)
+clippy 0.1.53 (faa9756 2021-04-16)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -3510,6 +3510,7 @@ target/lintcheck/sources/syn-1.0.54/src/lib.rs:1:null clippy::cargo_common_metad
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:1397:40 clippy::redundant_else "redundant else block"
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:1405:28 clippy::redundant_else "redundant else block"
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:1485:32 clippy::redundant_else "redundant else block"
+target/lintcheck/sources/syn-1.0.54/src/ty.rs:951:30 clippy::from_iter_instead_of_collect "usage of `FromIterator::from_iter`"
 target/lintcheck/sources/tame-oidc-0.1.0/src/lib.rs:1:null clippy::cargo_common_metadata "package `tame-oidc` is missing `package.categories` metadata"
 target/lintcheck/sources/tame-oidc-0.1.0/src/oidc.rs:111:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/tame-oidc-0.1.0/src/oidc.rs:127:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -3628,6 +3629,7 @@ target/lintcheck/sources/xsv-0.13.0/src/cmd/stats.rs:127:14 clippy::needless_pas
 target/lintcheck/sources/xsv-0.13.0/src/cmd/stats.rs:138:43 clippy::cast_possible_truncation "casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers"
 target/lintcheck/sources/xsv-0.13.0/src/cmd/stats.rs:139:43 clippy::cast_possible_truncation "casting `u64` to `usize` may truncate the value on targets with 32-bit wide pointers"
 target/lintcheck/sources/xsv-0.13.0/src/cmd/stats.rs:162:25 clippy::explicit_into_iter_loop "it is more concise to loop over containers instead of using explicit iteration methods"
+target/lintcheck/sources/xsv-0.13.0/src/cmd/stats.rs:191:13 clippy::from_iter_instead_of_collect "usage of `FromIterator::from_iter`"
 target/lintcheck/sources/xsv-0.13.0/src/cmd/stats.rs:22:16 clippy::redundant_static_lifetimes "statics have by default a `'static` lifetime"
 target/lintcheck/sources/xsv-0.13.0/src/cmd/stats.rs:231:1 clippy::struct_excessive_bools "more than 3 bools in a struct"
 target/lintcheck/sources/xsv-0.13.0/src/cmd/stats.rs:262:35 clippy::default_trait_access "calling `cmd::stats::TypedSum::default()` is more clear than this expression"
@@ -3719,7 +3721,6 @@ clippy::clone_on_copy 1
 clippy::comparison_chain 1
 clippy::expect_fun_call 1
 clippy::explicit_deref_methods 1
-clippy::from_iter_instead_of_collect 1
 clippy::int_plus_one 1
 clippy::manual_flatten 1
 clippy::manual_saturating_arithmetic 1
@@ -3754,6 +3755,7 @@ clippy::write_with_newline 2
 clippy::branches_sharing_code 3
 clippy::filter_map_next 3
 clippy::fn_params_excessive_bools 3
+clippy::from_iter_instead_of_collect 3
 clippy::if_same_then_else 3
 clippy::inconsistent_struct_constructor 3
 clippy::manual_map 3
