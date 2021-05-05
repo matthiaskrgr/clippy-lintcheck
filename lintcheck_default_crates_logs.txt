@@ -1,4 +1,4 @@
-clippy 0.1.53 (a8f28b6 2021-05-04)
+clippy 0.1.53 (7e538e3 2021-05-05)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -2099,8 +2099,6 @@ target/lintcheck/sources/libc-0.2.81/src/unix/linux_like/linux/mod.rs:2590:13 cl
 target/lintcheck/sources/libc-0.2.81/src/unix/linux_like/linux/mod.rs:2596:52 clippy::used_underscore_binding "used binding `_dummy` which is prefixed with an underscore. A leading underscore signals that a binding will not be used"
 target/lintcheck/sources/libc-0.2.81/src/unix/linux_like/linux/mod.rs:2597:11 clippy::cast_sign_loss "casting `i32` to `usize` may lose the sign of the value"
 target/lintcheck/sources/libc-0.2.81/src/unix/linux_like/linux/mod.rs:2601:21 clippy::explicit_iter_loop "it is more concise to loop over references to containers instead of using explicit iteration methods"
-target/lintcheck/sources/libc-0.2.81/src/unix/linux_like/linux/mod.rs:2611:9 clippy::unused_unit "unneeded unit expression"
-target/lintcheck/sources/libc-0.2.81/src/unix/linux_like/linux/mod.rs:2619:9 clippy::unused_unit "unneeded unit expression"
 target/lintcheck/sources/libc-0.2.81/src/unix/linux_like/linux/mod.rs:2634:9 clippy::cast_possible_wrap "casting `u32` to `i32` may wrap around the value"
 target/lintcheck/sources/libc-0.2.81/src/unix/linux_like/linux/mod.rs:2647:25 clippy::unreadable_literal "long literal lacking separators"
 target/lintcheck/sources/libc-0.2.81/src/unix/linux_like/linux/mod.rs:2648:25 clippy::unreadable_literal "long literal lacking separators"
@@ -3786,7 +3784,6 @@ clippy::redundant_pattern_matching 2
 clippy::redundant_slicing 2
 clippy::type_complexity 2
 clippy::unnecessary_cast 2
-clippy::unused_unit 2
 clippy::vec_init_then_push 2
 clippy::write_with_newline 2
 clippy::branches_sharing_code 3
