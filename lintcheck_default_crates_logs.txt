@@ -1,4 +1,4 @@
-clippy 0.1.54 (1e582c3 2021-05-07)
+clippy 0.1.54 (af8cf94 2021-05-07)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -2554,69 +2554,6 @@ target/lintcheck/sources/rand-0.7.3/src/distributions/weighted/mod.rs:169:16 cli
 target/lintcheck/sources/rand-0.7.3/src/distributions/weighted/mod.rs:386:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/rand-0.7.3/src/distributions/weighted/mod.rs:85:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/rand-0.7.3/src/lib.rs:333:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:412:14 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:435:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:459:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
-target/lintcheck/sources/rand-0.7.3/src/lib.rs:489:22 clippy::wrong_self_convention "methods with the following characteristics: (`to_*` and `self` type is not `Copy`) usually take `self` by reference"
 target/lintcheck/sources/rand-0.7.3/src/lib.rs:552:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
 target/lintcheck/sources/rand-0.7.3/src/rngs/adapter/read.rs:47:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/rand-0.7.3/src/rngs/adapter/read.rs:89:1 clippy::module_name_repetitions "item name starts with its containing module's name"
@@ -3819,6 +3756,7 @@ clippy::needless_question_mark 8
 clippy::len_without_is_empty 9
 clippy::match_wildcard_for_single_variants 9
 clippy::multiple_crate_versions 9
+clippy::wrong_self_convention 9
 clippy::manual_range_contains 10
 clippy::missing_safety_doc 10
 clippy::needless_doctest_main 10
@@ -3854,7 +3792,6 @@ clippy::single_match_else 48
 clippy::missing_panics_doc 57
 clippy::inline_always 59
 clippy::match_same_arms 62
-clippy::wrong_self_convention 72
 clippy::similar_names 83
 clippy::cast_possible_truncation 95
 clippy::redundant_field_names 111
