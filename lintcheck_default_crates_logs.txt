@@ -1,4 +1,4 @@
-clippy 0.1.54 (aa15a54 2021-05-12)
+clippy 0.1.54 (1fd9975 2021-05-13)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -2333,6 +2333,7 @@ target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:353:17 clippy::unnested
 target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:360:17 clippy::unnested_or_patterns "unnested or-patterns"
 target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:411:17 clippy::unnested_or_patterns "unnested or-patterns"
 target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:413:17 clippy::unnested_or_patterns "unnested or-patterns"
+target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:444:5 clippy::while_let_on_iterator "this loop could be written as a `for` loop"
 target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:476:13 clippy::unnested_or_patterns "unnested or-patterns"
 target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:500:13 clippy::unnested_or_patterns "unnested or-patterns"
 target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:552:5 clippy::while_let_on_iterator "this loop could be written as a `for` loop"
@@ -3469,6 +3470,8 @@ target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:1638:9 clippy::let_undersco
 target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:1649:9 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:952:13 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/serde-1.0.118/src/de/mod.rs:986:13 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
+target/lintcheck/sources/serde-1.0.118/src/private/de.rs:2830:9 clippy::while_let_on_iterator "this loop could be written as a `for` loop"
+target/lintcheck/sources/serde-1.0.118/src/private/de.rs:2932:9 clippy::while_let_on_iterator "this loop could be written as a `for` loop"
 target/lintcheck/sources/serde_yaml-0.8.17/src/lib.rs:1:null clippy::cargo_common_metadata "package `serde_yaml` is missing `package.categories` metadata"
 target/lintcheck/sources/syn-1.0.54/build.rs:1:null clippy::cargo_common_metadata "package `syn` is missing `package.keywords` metadata"
 target/lintcheck/sources/syn-1.0.54/src/error.rs:212:14 clippy::cloned_instead_of_copied "used `cloned` where `copied` could be used instead"
@@ -3708,7 +3711,6 @@ clippy::unsafe_derive_deserialize 1
 clippy::upper_case_acronyms 1
 clippy::used_underscore_binding 1
 clippy::verbose_bit_mask 1
-clippy::while_let_on_iterator 1
 clippy::comparison_to_empty 2
 clippy::from_over_into 2
 clippy::len_zero 2
@@ -3735,6 +3737,7 @@ clippy::ptr_arg 3
 clippy::zero_ptr 3
 clippy::mem_replace_with_default 4
 clippy::too_many_arguments 4
+clippy::while_let_on_iterator 4
 clippy::explicit_iter_loop 5
 clippy::field_reassign_with_default 5
 clippy::identity_op 5
