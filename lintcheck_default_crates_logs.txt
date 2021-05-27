@@ -1,4 +1,4 @@
-clippy 0.1.54 (f205dd1 2021-05-26)
+clippy 0.1.54 (16e347f 2021-05-27)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -83,7 +83,9 @@ target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/uninstall.rs:1:5 cl
 target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/update.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/vendor.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/vendor.rs:96:16 clippy::map_unwrap_or "called `map(<f>).unwrap_or_else(<g>)` on an `Option` value. This can be done more directly by calling `map_or_else(<g>, <f>)` instead"
+target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/verify_project.rs:14:1 clippy::unnecessary_wraps "this function's return value is unnecessary"
 target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/verify_project.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
+target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/version.rs:11:1 clippy::unnecessary_wraps "this function's return value is unnecessary"
 target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/version.rs:2:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/yank.rs:1:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/cargo-0.49.0/src/bin/cargo/commands/yank.rs:32:36 clippy::redundant_closure_for_method_calls "redundant closure"
@@ -114,6 +116,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_config.rs:51
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_config.rs:69:48 clippy::cast_possible_truncation "casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_config.rs:96:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_context/mod.rs:44:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_context/mod.rs:44:5 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Result`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_context/mod.rs:83:20 clippy::doc_markdown "you should put `x86_64` between ticks in the documentation"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_context/target_info.rs:108:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_context/target_info.rs:121:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -134,6 +137,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_context/targ
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_context/target_info.rs:84:9 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_context/target_info.rs:96:31 clippy::doc_markdown "you should put `FileType` between ticks in the documentation"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_context/target_info.rs:98:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_plan.rs:112:5 clippy::unnecessary_wraps "this function's return value is unnecessary"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_plan.rs:4:9 clippy::doc_markdown "you should put `BuildPlan` between ticks in the documentation"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_plan.rs:5:66 clippy::doc_markdown "you should put `BuildPlan` between ticks in the documentation"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/build_plan.rs:66:40 clippy::ptr_arg "writing `&PathBuf` instead of `&Path` involves a new object where a slice will do"
@@ -158,6 +162,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/compile_kind.rs:49
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/compile_kind.rs:69:48 clippy::case_sensitive_file_extension_comparisons "case-sensitive file extension comparison"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/compilation_files.rs:204:9 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/compilation_files.rs:277:22 clippy::doc_markdown "you should put `OUT_DIR` between ticks in the documentation"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/compilation_files.rs:286:5 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Result`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/compilation_files.rs:324:66 clippy::doc_markdown "you should put `FileType` between ticks in the documentation"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/compilation_files.rs:393:37 clippy::match_same_arms "this `match` has identical arm bodies"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/compilation_files.rs:426:71 clippy::redundant_closure_for_method_calls "redundant closure"
@@ -181,6 +186,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/mod.rs:383
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/mod.rs:384:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/mod.rs:391:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/mod.rs:397:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/mod.rs:397:5 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Result`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/mod.rs:523:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/mod.rs:538:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/context/mod.rs:542:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -211,6 +217,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/custom_build.rs:76
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/custom_build.rs:823:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/fingerprint.rs:1021:51 clippy::redundant_closure_for_method_calls "redundant closure"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/fingerprint.rs:1113:9 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/fingerprint.rs:1647:1 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Result`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/fingerprint.rs:1656:16 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/fingerprint.rs:1664:5 clippy::field_reassign_with_default "field assignment outside of initializer for an instance created with Default::default()"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/fingerprint.rs:1787:5 clippy::similar_names "binding's name is too similar to existing binding"
@@ -245,6 +252,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/fingerprint.rs:896
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/fingerprint.rs:897:30 clippy::similar_names "binding's name is too similar to existing binding"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/fingerprint.rs:991:37 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/job_queue.rs:12:5 clippy::doc_markdown "you should put `src/librustc_jobserver/lib.rs` between ticks in the documentation"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/job_queue.rs:280:5 clippy::unnecessary_wraps "this function's return value is unnecessary"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/job_queue.rs:329:13 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/job_queue.rs:332:23 clippy::needless_pass_by_value "this argument is passed by value, but not consumed in the function body"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/compiler/job_queue.rs:34:53 clippy::doc_markdown "you should put `NeedsToken` between ticks in the documentation"
@@ -693,6 +701,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/core/shell.rs:345:5 clippy::miss
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/shell.rs:459:9 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/shell.rs:98:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/source/mod.rs:103:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/core/source/mod.rs:10:41 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/source/mod.rs:247:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/source/mod.rs:261:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/core/source/mod.rs:268:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
@@ -1087,6 +1096,10 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/config.rs:81:5 clippy::m
 target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/config.rs:97:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/directory.rs:14:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/directory.rs:90:56 clippy::redundant_closure_for_method_calls "redundant closure"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/git/mod.rs:1:1 clippy::module_name_repetitions "item name starts with its containing module's name"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/git/mod.rs:2:30 clippy::module_name_repetitions "item name starts with its containing module's name"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/git/mod.rs:2:43 clippy::module_name_repetitions "item name starts with its containing module's name"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/git/mod.rs:2:56 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/git/source.rs:14:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/git/source.rs:25:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/sources/git/source.rs:49:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
@@ -1273,6 +1286,9 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/mod.rs:699:5 clippy:
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/mod.rs:719:58 clippy::redundant_closure_for_method_calls "redundant closure"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/mod.rs:748:30 clippy::manual_map "manual implementation of `Option::map`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/mod.rs:816:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/mod.rs:92:16 clippy::module_name_repetitions "item name starts with its containing module's name"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/mod.rs:95:18 clippy::module_name_repetitions "item name ends with its containing module's name"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/mod.rs:95:35 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/path.rs:10:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/path.rs:14:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/config/path.rs:48:1 clippy::module_name_repetitions "item name starts with its containing module's name"
@@ -1297,6 +1313,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/util/dependency_queue.rs:91:9 cl
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/diagnostic_server.rs:218:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/diagnostic_server.rs:230:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/diagnostic_server.rs:242:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/diagnostic_server.rs:242:5 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Result`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/diagnostic_server.rs:58:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/diagnostic_server.rs:96:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/diagnostic_server.rs:96:5 clippy::too_many_lines "this function has too many lines (110/100)"
@@ -1305,7 +1322,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/util/errors.rs:101:5 clippy::mus
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/errors.rs:143:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/errors.rs:150:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/errors.rs:15:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
-target/lintcheck/sources/cargo-0.49.0/src/cargo/util/errors.rs:237:5 clippy::pub_enum_variant_names "variant name ends with the enum's name"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/errors.rs:237:5 clippy::enum_variant_names "variant name ends with the enum's name"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/errors.rs:245:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/errors.rs:247:13 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/errors.rs:289:21 clippy::match_wildcard_for_single_variants "wildcard matches only a single variant and will also match any future added variants"
@@ -1364,12 +1381,14 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/util/interning.rs:77:5 clippy::m
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/into_url.rs:10:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/into_url_with_base.rs:9:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/job.rs:20:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/job.rs:30:5 clippy::unnecessary_wraps "this function's return value is unnecessary"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/lev_distance.rs:3:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/lockserver.rs:111:32 clippy::redundant_else "redundant else block"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/lockserver.rs:158:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/lockserver.rs:46:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/lockserver.rs:58:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/lockserver.rs:62:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/lockserver.rs:62:5 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Result`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/mod.rs:68:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/mod.rs:79:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/network.rs:12:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -1388,7 +1407,9 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:173:1 clippy::miss
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:178:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:185:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:199:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:199:1 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Result`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:215:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:215:1 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Result`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:228:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:251:9 clippy::option_if_let_else "use Option::map_or instead of an if let/else"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/paths.rs:267:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -1595,6 +1616,7 @@ target/lintcheck/sources/cxx-1.0.32/src/weak_ptr.rs:47:20 clippy::ptr_as_ptr "`a
 target/lintcheck/sources/cxx-1.0.32/src/weak_ptr.rs:80:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/cxx-1.0.32/src/weak_ptr.rs:81:18 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/iron-0.6.1/src/error.rs:24:1 clippy::module_name_repetitions "item name ends with its containing module's name"
+target/lintcheck/sources/iron-0.6.1/src/error.rs:7:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/iron-0.6.1/src/iron.rs:105:13 clippy::redundant_field_names "redundant field names in struct initialization"
 target/lintcheck/sources/iron-0.6.1/src/iron.rs:119:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/iron-0.6.1/src/iron.rs:133:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -1607,6 +1629,7 @@ target/lintcheck/sources/iron-0.6.1/src/iron.rs:196:9 clippy::let_underscore_dro
 target/lintcheck/sources/iron-0.6.1/src/iron.rs:80:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/iron-0.6.1/src/iron.rs:85:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/iron-0.6.1/src/iron.rs:90:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
+target/lintcheck/sources/iron-0.6.1/src/lib.rs:148:5 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/iron-0.6.1/src/lib.rs:1:null clippy::cargo_common_metadata "package `iron` is missing `package.categories` metadata"
 target/lintcheck/sources/iron-0.6.1/src/lib.rs:1:null clippy::cargo_common_metadata "package `iron` is missing `package.keywords` metadata"
 target/lintcheck/sources/iron-0.6.1/src/lib.rs:1:null clippy::multiple_crate_versions "multiple versions for dependency `log`: 0.3.9, 0.4.8"
@@ -1636,6 +1659,7 @@ target/lintcheck/sources/iron-0.6.1/src/request/mod.rs:126:13 clippy::redundant_
 target/lintcheck/sources/iron-0.6.1/src/request/mod.rs:128:13 clippy::redundant_field_names "redundant field names in struct initialization"
 target/lintcheck/sources/iron-0.6.1/src/request/mod.rs:153:69 clippy::doc_markdown "you should put `HttpReader` between ticks in the documentation"
 target/lintcheck/sources/iron-0.6.1/src/request/mod.rs:154:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
+target/lintcheck/sources/iron-0.6.1/src/request/mod.rs:16:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/iron-0.6.1/src/request/mod.rs:32:1 clippy::manual_non_exhaustive "this seems like a manual implementation of the non-exhaustive pattern"
 target/lintcheck/sources/iron-0.6.1/src/request/mod.rs:75:34 clippy::doc_markdown "you should put `HttpRequest` between ticks in the documentation"
 target/lintcheck/sources/iron-0.6.1/src/request/mod.rs:77:39 clippy::doc_markdown "you should put `HttpRequest` between ticks in the documentation"
@@ -1662,6 +1686,7 @@ target/lintcheck/sources/iron-0.6.1/src/request/url.rs:96:5 clippy::must_use_can
 target/lintcheck/sources/iron-0.6.1/src/response.rs:121:19 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/iron-0.6.1/src/response.rs:125:43 clippy::redundant_closure_for_method_calls "redundant closure"
 target/lintcheck/sources/iron-0.6.1/src/response.rs:139:41 clippy::redundant_closure_for_method_calls "redundant closure"
+target/lintcheck/sources/iron-0.6.1/src/response.rs:15:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/iron-0.6.1/src/response.rs:24:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/iron-0.6.1/src/response.rs:95:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/iron-0.6.1/src/response.rs:95:5 clippy::new_without_default "you should consider adding a `Default` implementation for `response::Response`"
@@ -2344,6 +2369,7 @@ target/lintcheck/sources/proc-macro2-1.0.24/src/fallback.rs:437:23 clippy::trivi
 target/lintcheck/sources/proc-macro2-1.0.24/src/fallback.rs:437:23 clippy::unused_self "unused `self` argument"
 target/lintcheck/sources/proc-macro2-1.0.24/src/fallback.rs:471:17 clippy::trivially_copy_pass_by_ref "this argument (0 byte) is passed by reference, but would be more efficient if passed by value (limit: 8 byte)"
 target/lintcheck/sources/proc-macro2-1.0.24/src/fallback.rs:471:17 clippy::unused_self "unused `self` argument"
+target/lintcheck/sources/proc-macro2-1.0.24/src/fallback.rs:471:5 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Option`"
 target/lintcheck/sources/proc-macro2-1.0.24/src/fallback.rs:50:9 clippy::mem_replace_with_default "replacing a value of type `T` with `T::default()` is better expressed using `std::mem::take`"
 target/lintcheck/sources/proc-macro2-1.0.24/src/fallback.rs:654:5 clippy::manual_range_contains "manual `RangeInclusive::contains` implementation"
 target/lintcheck/sources/proc-macro2-1.0.24/src/fallback.rs:655:12 clippy::manual_range_contains "manual `RangeInclusive::contains` implementation"
@@ -2414,6 +2440,7 @@ target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:808:15 clippy::explicit
 target/lintcheck/sources/proc-macro2-1.0.24/src/wrapper.rs:415:24 clippy::trivially_copy_pass_by_ref "this argument (4 byte) is passed by reference, but would be more efficient if passed by value (limit: 8 byte)"
 target/lintcheck/sources/proc-macro2-1.0.24/src/wrapper.rs:429:23 clippy::trivially_copy_pass_by_ref "this argument (4 byte) is passed by reference, but would be more efficient if passed by value (limit: 8 byte)"
 target/lintcheck/sources/proc-macro2-1.0.24/src/wrapper.rs:492:17 clippy::trivially_copy_pass_by_ref "this argument (4 byte) is passed by reference, but would be more efficient if passed by value (limit: 8 byte)"
+target/lintcheck/sources/puffin-02dd4a3/puffin-imgui/src/lib.rs:9:5 renamed_and_removed_lints "lint `clippy::pub_enum_variant_names` has been removed: set the `avoid_breaking_exported_api` config option to `false` to enable the `enum_variant_names` lint for public items"
 target/lintcheck/sources/puffin-02dd4a3/puffin-imgui/src/ui.rs:158:15 clippy::cast_precision_loss "casting `i64` to `f32` causes a loss of precision (`i64` is 64 bits wide, but `f32`'s mantissa is only 23 bits wide)"
 target/lintcheck/sources/puffin-02dd4a3/puffin-imgui/src/ui.rs:175:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/puffin-02dd4a3/puffin-imgui/src/ui.rs:183:5 clippy::too_many_lines "this function has too many lines (115/100)"
@@ -2462,6 +2489,7 @@ target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:408:5 clippy::option_i
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:69:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:73:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:77:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
+target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:9:5 renamed_and_removed_lints "lint `clippy::pub_enum_variant_names` has been removed: set the `avoid_breaking_exported_api` config option to `false` to enable the `enum_variant_names` lint for public items"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/merge.rs:21:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/merge.rs:28:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/merge.rs:28:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
@@ -2475,6 +2503,7 @@ target/lintcheck/sources/quote-1.0.7/src/ext.rs:10:1 clippy::module_name_repetit
 target/lintcheck/sources/quote-1.0.7/src/ext.rs:7:5 clippy::doc_markdown "you should put `TokenStream` between ticks in the documentation"
 target/lintcheck/sources/quote-1.0.7/src/ident_fragment.rs:13:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/quote-1.0.7/src/ident_fragment.rs:51:31 clippy::manual_strip "stripping a prefix manually"
+target/lintcheck/sources/quote-1.0.7/src/runtime.rs:164:5 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Option`"
 target/lintcheck/sources/quote-1.0.7/src/runtime.rs:52:5 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/quote-1.0.7/src/runtime.rs:63:5 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/quote-1.0.7/src/runtime.rs:66:33 clippy::doc_markdown "you should put `DoesNotHaveIter` between ticks in the documentation"
@@ -2704,6 +2733,7 @@ target/lintcheck/sources/rand_core-0.6.0/src/block.rs:425:5 clippy::inline_alway
 target/lintcheck/sources/rand_core-0.6.0/src/block.rs:67:14 clippy::doc_markdown "you should put `module][crate::block` between ticks in the documentation"
 target/lintcheck/sources/rand_core-0.6.0/src/block.rs:68:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/rand_core-0.6.0/src/error.rs:106:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
+target/lintcheck/sources/rand_core-0.6.0/src/error.rs:106:5 clippy::unnecessary_wraps "this function's return value is unnecessarily wrapped by `Option`"
 target/lintcheck/sources/rand_core-0.6.0/src/error.rs:87:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/rand_core-0.6.0/src/error.rs:95:74 clippy::cast_possible_wrap "casting `u32` to `i32` may wrap around the value"
 target/lintcheck/sources/rand_core-0.6.0/src/lib.rs:179:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -2871,6 +2901,9 @@ target/lintcheck/sources/rayon-1.5.0/src/iter/map_with.rs:419:9 clippy::items_af
 target/lintcheck/sources/rayon-1.5.0/src/iter/map_with.rs:425:9 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
 target/lintcheck/sources/rayon-1.5.0/src/iter/map_with.rs:90:9 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
 target/lintcheck/sources/rayon-1.5.0/src/iter/map_with.rs:96:9 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
+target/lintcheck/sources/rayon-1.5.0/src/iter/mod.rs:164:5 clippy::module_name_repetitions "item name ends with its containing module's name"
+target/lintcheck/sources/rayon-1.5.0/src/iter/mod.rs:166:5 clippy::module_name_repetitions "item name ends with its containing module's name"
+target/lintcheck/sources/rayon-1.5.0/src/iter/mod.rs:178:18 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/rayon-1.5.0/src/iter/mod.rs:1874:24 clippy::trivially_copy_pass_by_ref "this argument (1 byte) is passed by reference, but would be more efficient if passed by value (limit: 8 byte)"
 target/lintcheck/sources/rayon-1.5.0/src/iter/mod.rs:2171:1 clippy::len_without_is_empty "trait `IndexedParallelIterator` has a `len` method but no (possibly inherited) `is_empty` method"
 target/lintcheck/sources/rayon-1.5.0/src/iter/mod.rs:2371:26 clippy::trivially_copy_pass_by_ref "this argument (1 byte) is passed by reference, but would be more efficient if passed by value (limit: 8 byte)"
@@ -3553,6 +3586,7 @@ target/lintcheck/sources/ripgrep-12.1.1/crates/core/messages.rs:63:5 clippy::sem
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/path_printer.rs:27:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/path_printer.rs:89:9 clippy::if_not_else "unnecessary boolean `not` operation"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:185:1 clippy::module_name_repetitions "item name starts with its containing module's name"
+target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:224:5 clippy::upper_case_acronyms "name `JSON` contains a capitalized acronym"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:292:9 clippy::write_with_newline "using `write!()` with a format string that ends in a single newline"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:311:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/ripgrep-12.1.1/crates/core/search.rs:377:12 clippy::nonminimal_bool "this boolean expression can be simplified"
@@ -3616,6 +3650,7 @@ target/lintcheck/sources/syn-1.0.54/src/lit.rs:409:9 clippy::semicolon_if_nothin
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:481:9 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/syn-1.0.54/src/punctuated.rs:995:13 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/syn-1.0.54/src/ty.rs:951:30 clippy::from_iter_instead_of_collect "usage of `FromIterator::from_iter`"
+target/lintcheck/sources/tame-oidc-0.1.0/src/errors.rs:9:5 clippy::upper_case_acronyms "name `HTTP` contains a capitalized acronym"
 target/lintcheck/sources/tame-oidc-0.1.0/src/lib.rs:1:null clippy::cargo_common_metadata "package `tame-oidc` is missing `package.categories` metadata"
 target/lintcheck/sources/tame-oidc-0.1.0/src/oidc.rs:111:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/tame-oidc-0.1.0/src/oidc.rs:127:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -3634,6 +3669,8 @@ target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:26:5 clippy::missing_er
 target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:38:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:57:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:71:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:77:12 clippy::upper_case_acronyms "name `JWK` contains a capitalized acronym"
+target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:90:12 clippy::upper_case_acronyms "name `JWKS` contains a capitalized acronym"
 target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:95:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/thiserror-1.0.24/src/lib.rs:1:null clippy::cargo_common_metadata "package `thiserror` is missing `package.keywords` metadata"
 target/lintcheck/sources/unicode-xid-0.2.1/src/lib.rs:1:null clippy::cargo_common_metadata "package `unicode-xid` is missing `package.categories` metadata"
@@ -3833,6 +3870,7 @@ target/lintcheck/sources/xsv-0.13.0/src/util.rs:90:1 clippy::needless_lifetimes 
 Stats:
 clippy::clone_on_copy 1
 clippy::comparison_chain 1
+clippy::enum_variant_names 1
 clippy::expect_fun_call 1
 clippy::explicit_deref_methods 1
 clippy::int_plus_one 1
@@ -3842,13 +3880,11 @@ clippy::map_entry 1
 clippy::nonminimal_bool 1
 clippy::or_fun_call 1
 clippy::precedence 1
-clippy::pub_enum_variant_names 1
 clippy::redundant_clone 1
 clippy::should_implement_trait 1
 clippy::stable_sort_primitive 1
 clippy::unnecessary_lazy_evaluations 1
 clippy::unsafe_derive_deserialize 1
-clippy::upper_case_acronyms 1
 clippy::used_underscore_binding 1
 clippy::verbose_bit_mask 1
 clippy::comparison_to_empty 2
@@ -3865,6 +3901,7 @@ clippy::type_complexity 2
 clippy::unnecessary_cast 2
 clippy::vec_init_then_push 2
 clippy::write_with_newline 2
+renamed_and_removed_lints 2
 clippy::branches_sharing_code 3
 clippy::filter_map_next 3
 clippy::fn_params_excessive_bools 3
@@ -3884,6 +3921,7 @@ clippy::identity_op 5
 clippy::match_like_matches_macro 5
 clippy::needless_return 5
 clippy::new_without_default 5
+clippy::upper_case_acronyms 5
 clippy::collapsible_else_if 6
 clippy::manual_strip 6
 clippy::non_ascii_literal 6
@@ -3912,7 +3950,6 @@ clippy::needless_borrow 18
 clippy::needless_pass_by_value 18
 clippy::cast_possible_wrap 19
 clippy::cast_sign_loss 19
-clippy::unnecessary_wraps 19
 clippy::unused_self 19
 clippy::unusual_byte_groupings 19
 clippy::map_unwrap_or 20
@@ -3927,6 +3964,7 @@ clippy::let_underscore_drop 26
 clippy::trivially_copy_pass_by_ref 26
 clippy::redundant_else 29
 clippy::cloned_instead_of_copied 35
+clippy::unnecessary_wraps 35
 clippy::too_many_lines 36
 clippy::if_not_else 38
 clippy::unseparated_literal_suffix 41
@@ -3942,7 +3980,7 @@ clippy::redundant_field_names 111
 clippy::semicolon_if_nothing_returned 126
 clippy::redundant_closure_for_method_calls 131
 clippy::items_after_statements 143
-clippy::module_name_repetitions 146
+clippy::module_name_repetitions 161
 clippy::expl_impl_clone_on_copy 164
 clippy::wildcard_imports 164
 clippy::doc_markdown 184
