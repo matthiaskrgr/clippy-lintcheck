@@ -1,4 +1,4 @@
-clippy 0.1.54 (860cb8f 2021-05-31)
+clippy 0.1.54 (cf5f894 2021-06-01)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -1043,6 +1043,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:785:1 clippy::mi
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:794:16 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:828:14 clippy::doc_markdown "you should put `SourceId` between ticks in the documentation"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:848:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/registry.rs:891:29 clippy::manual_str_repeat "manual implementation of `str::repeat` using iterators"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/resolve.rs:107:17 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/resolve.rs:199:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/resolve.rs:199:1 clippy::module_name_repetitions "item name starts with its containing module's name"
@@ -1442,6 +1443,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/util/process_builder.rs:218:5 cl
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/process_builder.rs:278:22 clippy::inconsistent_struct_constructor "struct constructor field order is inconsistent with struct definition field order"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/process_builder.rs:307:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/process_builder.rs:343:39 clippy::needless_pass_by_value "this argument is passed by value, but not consumed in the function body"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/util/profile.rs:67:25 clippy::manual_str_repeat "manual implementation of `str::repeat` using iterators"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/progress.rs:122:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/progress.rs:136:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/util/progress.rs:15:1 clippy::module_name_repetitions "item name starts with its containing module's name"
@@ -3227,6 +3229,7 @@ target/lintcheck/sources/regex-1.3.2/src/dfa.rs:885:12 clippy::doc_markdown "you
 target/lintcheck/sources/regex-1.3.2/src/dfa.rs:889:9 clippy::doc_markdown "you should put `STATE_UNKNOWN` between ticks in the documentation"
 target/lintcheck/sources/regex-1.3.2/src/dfa.rs:897:13 clippy::enum_glob_use "usage of wildcard import for enum variants"
 target/lintcheck/sources/regex-1.3.2/src/dfa.rs:979:29 clippy::cast_possible_truncation "casting `usize` to `u32` may truncate the value on targets with 64-bit wide pointers"
+target/lintcheck/sources/regex-1.3.2/src/error.rs:55:34 clippy::manual_str_repeat "manual implementation of `str::repeat` using iterators"
 target/lintcheck/sources/regex-1.3.2/src/error.rs:6:1 clippy::manual_non_exhaustive "this seems like a manual implementation of the non-exhaustive pattern"
 target/lintcheck/sources/regex-1.3.2/src/exec.rs:1000:14 clippy::doc_markdown "you should put `captures_nfa` between ticks in the documentation"
 target/lintcheck/sources/regex-1.3.2/src/exec.rs:100:1 clippy::module_name_repetitions "item name starts with its containing module's name"
@@ -3909,6 +3912,7 @@ clippy::from_iter_instead_of_collect 3
 clippy::if_same_then_else 3
 clippy::inconsistent_struct_constructor 3
 clippy::manual_map 3
+clippy::manual_str_repeat 3
 clippy::mut_mut 3
 clippy::ptr_arg 3
 clippy::zero_ptr 3
