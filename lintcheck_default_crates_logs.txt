@@ -1,4 +1,4 @@
-clippy 0.1.54 (07217e3 2021-06-08)
+clippy 0.1.54 (dd02468 2021-06-09)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -1595,7 +1595,6 @@ target/lintcheck/sources/cfg-expr-0.7.1/src/lib.rs:1:null clippy::cargo_common_m
 target/lintcheck/sources/cfg-expr-0.7.1/src/targets/builtins.rs:11:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/cfg-expr-0.7.1/src/targets/mod.rs:139:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
 target/lintcheck/sources/cfg-expr-0.7.1/src/targets/mod.rs:153:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
-target/lintcheck/sources/cxx-1.0.32/src/cxx_string.rs:152:18 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/cxx-1.0.32/src/rust_string.rs:15:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/cxx-1.0.32/src/rust_string.rs:19:24 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/cxx-1.0.32/src/rust_vec.rs:21:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
@@ -1605,18 +1604,15 @@ target/lintcheck/sources/cxx-1.0.32/src/rust_vec.rs:78:39 clippy::ptr_as_ptr "`a
 target/lintcheck/sources/cxx-1.0.32/src/rust_vec.rs:90:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/cxx-1.0.32/src/rust_vec.rs:94:24 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/cxx-1.0.32/src/shared_ptr.rs:108:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
-target/lintcheck/sources/cxx-1.0.32/src/shared_ptr.rs:109:18 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/cxx-1.0.32/src/shared_ptr.rs:165:9 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/cxx-1.0.32/src/shared_ptr.rs:167:9 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/cxx-1.0.32/src/shared_ptr.rs:54:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/cxx-1.0.32/src/shared_ptr.rs:62:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/cxx-1.0.32/src/shared_ptr.rs:75:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
-target/lintcheck/sources/cxx-1.0.32/src/unique_ptr.rs:117:18 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/cxx-1.0.32/src/unique_ptr.rs:185:9 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/cxx-1.0.32/src/unwind.rs:22:5 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/cxx-1.0.32/src/weak_ptr.rs:47:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/cxx-1.0.32/src/weak_ptr.rs:80:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
-target/lintcheck/sources/cxx-1.0.32/src/weak_ptr.rs:81:18 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/iron-0.6.1/src/error.rs:24:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/iron-0.6.1/src/error.rs:7:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/iron-0.6.1/src/iron.rs:105:13 clippy::redundant_field_names "redundant field names in struct initialization"
@@ -2684,7 +2680,6 @@ target/lintcheck/sources/rand-0.7.3/src/rngs/std.rs:49:5 clippy::inline_always "
 target/lintcheck/sources/rand-0.7.3/src/rngs/std.rs:54:5 clippy::inline_always "you have declared `#[inline(always)]` on `try_fill_bytes`. This is usually a bad idea"
 target/lintcheck/sources/rand-0.7.3/src/rngs/std.rs:63:5 clippy::inline_always "you have declared `#[inline(always)]` on `from_seed`. This is usually a bad idea"
 target/lintcheck/sources/rand-0.7.3/src/rngs/std.rs:68:5 clippy::inline_always "you have declared `#[inline(always)]` on `from_rng`. This is usually a bad idea"
-target/lintcheck/sources/rand-0.7.3/src/rngs/thread.rs:104:18 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/rand-0.7.3/src/rngs/thread.rs:57:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/rand-0.7.3/src/rngs/thread.rs:80:1 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
 target/lintcheck/sources/rand-0.7.3/src/rngs/thread.rs:80:1 clippy::module_name_repetitions "item name starts with its containing module's name"
@@ -3050,8 +3045,6 @@ target/lintcheck/sources/rayon-1.5.0/src/str.rs:41:14 clippy::cloned_instead_of_
 target/lintcheck/sources/rayon-1.5.0/src/str.rs:715:9 clippy::manual_strip "stripping a suffix manually"
 target/lintcheck/sources/rayon-1.5.0/src/string.rs:5:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/vec.rs:137:12 clippy::len_zero "length comparison to zero"
-target/lintcheck/sources/rayon-1.5.0/src/vec.rs:196:18 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
-target/lintcheck/sources/rayon-1.5.0/src/vec.rs:243:18 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/rayon-1.5.0/src/vec.rs:8:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/vec.rs:9:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/regex-1.3.2/src/backtrack.rs:100:13 clippy::redundant_field_names "redundant field names in struct initialization"
@@ -3981,7 +3974,7 @@ clippy::match_same_arms 62
 clippy::similar_names 83
 clippy::cast_possible_truncation 95
 clippy::redundant_field_names 111
-clippy::semicolon_if_nothing_returned 126
+clippy::semicolon_if_nothing_returned 119
 clippy::redundant_closure_for_method_calls 131
 clippy::items_after_statements 143
 clippy::module_name_repetitions 161
