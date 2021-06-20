@@ -1,4 +1,4 @@
-clippy 0.1.55 (7869e62 2021-06-19)
+clippy 0.1.55 (3120b09 2021-06-19)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -934,6 +934,7 @@ target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/cargo_new.rs:525:47 clippy::
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/cargo_new.rs:525:9 clippy::doc_markdown "you should put `format_existing` between ticks in the documentation"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/cargo_new.rs:572:34 clippy::match_same_arms "this `match` has identical arm bodies"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/cargo_new.rs:623:1 clippy::too_many_lines "this function has too many lines (130/100)"
+target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/cargo_new.rs:717:40 clippy::nonstandard_macro_braces "use of irregular braces for `vec!` macro"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/cargo_new.rs:781:5 clippy::filter_map_next "called `filter_map(..).next()` on an `Iterator`. This is more succinctly expressed by calling `.find_map(..)` instead"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/cargo_new.rs:800:16 clippy::single_match_else "you seem to be trying to use `match` for destructuring a single pattern. Consider using `if let`"
 target/lintcheck/sources/cargo-0.49.0/src/cargo/ops/cargo_output_metadata.rs:163:36 clippy::redundant_closure_for_method_calls "redundant closure"
@@ -3646,6 +3647,8 @@ target/lintcheck/sources/syn-1.0.54/src/lit.rs:409:9 clippy::semicolon_if_nothin
 target/lintcheck/sources/syn-1.0.54/src/lit.rs:481:9 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/syn-1.0.54/src/punctuated.rs:995:13 clippy::semicolon_if_nothing_returned "consider adding a `;` to the last statement for consistent formatting"
 target/lintcheck/sources/syn-1.0.54/src/ty.rs:951:30 clippy::from_iter_instead_of_collect "usage of `FromIterator::from_iter`"
+target/lintcheck/sources/tame-oidc-0.1.0/src/errors.rs:12:10 clippy::nonstandard_macro_braces "use of irregular braces for `write!` macro"
+target/lintcheck/sources/tame-oidc-0.1.0/src/errors.rs:3:10 clippy::nonstandard_macro_braces "use of irregular braces for `write!` macro"
 target/lintcheck/sources/tame-oidc-0.1.0/src/errors.rs:9:5 clippy::upper_case_acronyms "name `HTTP` contains a capitalized acronym"
 target/lintcheck/sources/tame-oidc-0.1.0/src/lib.rs:1:null clippy::cargo_common_metadata "package `tame-oidc` is missing `package.categories` metadata"
 target/lintcheck/sources/tame-oidc-0.1.0/src/oidc.rs:111:1 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
@@ -3844,6 +3847,7 @@ target/lintcheck/sources/xsv-0.13.0/src/select.rs:154:5 clippy::unnecessary_wrap
 target/lintcheck/sources/xsv-0.13.0/src/select.rs:210:34 clippy::cloned_instead_of_copied "used `cloned` where `copied` could be used instead"
 target/lintcheck/sources/xsv-0.13.0/src/select.rs:250:33 clippy::similar_names "binding's name is too similar to existing binding"
 target/lintcheck/sources/xsv-0.13.0/src/select.rs:250:43 clippy::similar_names "binding's name is too similar to existing binding"
+target/lintcheck/sources/xsv-0.13.0/src/select.rs:254:40 clippy::nonstandard_macro_braces "use of irregular braces for `vec!` macro"
 target/lintcheck/sources/xsv-0.13.0/src/select.rs:255:39 clippy::range_plus_one "an inclusive range would be more readable"
 target/lintcheck/sources/xsv-0.13.0/src/select.rs:280:20 clippy::len_zero "length comparison to zero"
 target/lintcheck/sources/xsv-0.13.0/src/select.rs:29:13 clippy::redundant_field_names "redundant field names in struct initialization"
@@ -3910,6 +3914,7 @@ clippy::mut_mut 3
 clippy::ptr_arg 3
 clippy::zero_ptr 3
 clippy::mem_replace_with_default 4
+clippy::nonstandard_macro_braces 4
 clippy::too_many_arguments 4
 clippy::while_let_on_iterator 4
 clippy::explicit_iter_loop 5
