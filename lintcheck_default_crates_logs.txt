@@ -1,4 +1,4 @@
-clippy 0.1.55 (3120b09 2021-06-19)
+clippy 0.1.55 (86bf28d 2021-06-21)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -2439,7 +2439,7 @@ target/lintcheck/sources/proc-macro2-1.0.24/src/parse.rs:808:15 clippy::explicit
 target/lintcheck/sources/proc-macro2-1.0.24/src/wrapper.rs:415:24 clippy::trivially_copy_pass_by_ref "this argument (4 byte) is passed by reference, but would be more efficient if passed by value (limit: 8 byte)"
 target/lintcheck/sources/proc-macro2-1.0.24/src/wrapper.rs:429:23 clippy::trivially_copy_pass_by_ref "this argument (4 byte) is passed by reference, but would be more efficient if passed by value (limit: 8 byte)"
 target/lintcheck/sources/proc-macro2-1.0.24/src/wrapper.rs:492:17 clippy::trivially_copy_pass_by_ref "this argument (4 byte) is passed by reference, but would be more efficient if passed by value (limit: 8 byte)"
-target/lintcheck/sources/puffin-02dd4a3/puffin-imgui/src/lib.rs:9:5 renamed_and_removed_lints "lint `clippy::pub_enum_variant_names` has been removed: set the `avoid_breaking_exported_api` config option to `false` to enable the `enum_variant_names` lint for public items"
+target/lintcheck/sources/puffin-02dd4a3/puffin-imgui/src/lib.rs:9:5 renamed_and_removed_lints "lint `clippy::pub_enum_variant_names` has been removed: set the `avoid-breaking-exported-api` config option to `false` to enable the `enum_variant_names` lint for public items"
 target/lintcheck/sources/puffin-02dd4a3/puffin-imgui/src/ui.rs:158:15 clippy::cast_precision_loss "casting `i64` to `f32` causes a loss of precision (`i64` is 64 bits wide, but `f32`'s mantissa is only 23 bits wide)"
 target/lintcheck/sources/puffin-02dd4a3/puffin-imgui/src/ui.rs:175:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/puffin-02dd4a3/puffin-imgui/src/ui.rs:183:5 clippy::too_many_lines "this function has too many lines (115/100)"
@@ -2488,7 +2488,7 @@ target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:408:5 clippy::option_i
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:69:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:73:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:77:5 clippy::must_use_candidate "this method could have a `#[must_use]` attribute"
-target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:9:5 renamed_and_removed_lints "lint `clippy::pub_enum_variant_names` has been removed: set the `avoid_breaking_exported_api` config option to `false` to enable the `enum_variant_names` lint for public items"
+target/lintcheck/sources/puffin-02dd4a3/puffin/src/lib.rs:9:5 renamed_and_removed_lints "lint `clippy::pub_enum_variant_names` has been removed: set the `avoid-breaking-exported-api` config option to `false` to enable the `enum_variant_names` lint for public items"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/merge.rs:21:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/merge.rs:28:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/puffin-02dd4a3/puffin/src/merge.rs:28:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
