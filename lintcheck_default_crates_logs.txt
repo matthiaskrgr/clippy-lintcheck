@@ -1,4 +1,4 @@
-clippy 0.1.55 (86bf28d 2021-06-21)
+clippy 0.1.55 (48fa1dc 2021-06-21)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -2650,6 +2650,7 @@ target/lintcheck/sources/rand-0.7.3/src/distributions/weighted/mod.rs:144:5 clip
 target/lintcheck/sources/rand-0.7.3/src/distributions/weighted/mod.rs:144:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
 target/lintcheck/sources/rand-0.7.3/src/distributions/weighted/mod.rs:169:16 clippy::int_plus_one "unnecessary `>= y + 1` or `x - 1 >=`"
 target/lintcheck/sources/rand-0.7.3/src/distributions/weighted/mod.rs:386:1 clippy::module_name_repetitions "item name starts with its containing module's name"
+target/lintcheck/sources/rand-0.7.3/src/distributions/weighted/mod.rs:44:1 clippy::doc_markdown "backticks are unbalanced"
 target/lintcheck/sources/rand-0.7.3/src/distributions/weighted/mod.rs:85:1 clippy::module_name_repetitions "item name starts with its containing module's name"
 target/lintcheck/sources/rand-0.7.3/src/lib.rs:333:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
 target/lintcheck/sources/rand-0.7.3/src/lib.rs:552:1 clippy::must_use_candidate "this function could have a `#[must_use]` attribute"
@@ -2764,11 +2765,9 @@ target/lintcheck/sources/rayon-1.5.0/src/collections/vec_deque.rs:8:5 clippy::wi
 target/lintcheck/sources/rayon-1.5.0/src/collections/vec_deque.rs:9:5 clippy::wildcard_imports "usage of wildcard import"
 target/lintcheck/sources/rayon-1.5.0/src/compile_fail/cannot_collect_filtermap_data.rs:2:1 clippy::needless_doctest_main "needless `fn main` in doctest"
 target/lintcheck/sources/rayon-1.5.0/src/compile_fail/cannot_zip_filtered_data.rs:2:1 clippy::needless_doctest_main "needless `fn main` in doctest"
-target/lintcheck/sources/rayon-1.5.0/src/compile_fail/cell_par_iter.rs:2:1 clippy::needless_doctest_main "needless `fn main` in doctest"
 target/lintcheck/sources/rayon-1.5.0/src/compile_fail/no_send_par_iter.rs:25:1 clippy::needless_doctest_main "needless `fn main` in doctest"
 target/lintcheck/sources/rayon-1.5.0/src/compile_fail/no_send_par_iter.rs:46:1 clippy::needless_doctest_main "needless `fn main` in doctest"
 target/lintcheck/sources/rayon-1.5.0/src/compile_fail/no_send_par_iter.rs:4:1 clippy::needless_doctest_main "needless `fn main` in doctest"
-target/lintcheck/sources/rayon-1.5.0/src/compile_fail/rc_par_iter.rs:2:1 clippy::needless_doctest_main "needless `fn main` in doctest"
 target/lintcheck/sources/rayon-1.5.0/src/iter/chain.rs:103:9 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
 target/lintcheck/sources/rayon-1.5.0/src/iter/chain.rs:122:9 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
 target/lintcheck/sources/rayon-1.5.0/src/iter/chain.rs:128:9 clippy::items_after_statements "adding items after statements is confusing, since items exist from the start of the scope"
@@ -3671,6 +3670,7 @@ target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:71:5 clippy::missing_er
 target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:77:12 clippy::upper_case_acronyms "name `JWK` contains a capitalized acronym"
 target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:90:12 clippy::upper_case_acronyms "name `JWKS` contains a capitalized acronym"
 target/lintcheck/sources/tame-oidc-0.1.0/src/provider.rs:95:5 clippy::missing_errors_doc "docs for function returning `Result` missing `# Errors` section"
+target/lintcheck/sources/thiserror-1.0.24/src/lib.rs:128:1 clippy::doc_markdown "backticks are unbalanced"
 target/lintcheck/sources/thiserror-1.0.24/src/lib.rs:1:null clippy::cargo_common_metadata "package `thiserror` is missing `package.keywords` metadata"
 target/lintcheck/sources/unicode-xid-0.2.1/src/lib.rs:1:null clippy::cargo_common_metadata "package `unicode-xid` is missing `package.categories` metadata"
 target/lintcheck/sources/unicode-xid-0.2.1/src/lib.rs:57:64 clippy::doc_markdown "you should put `XID_Start` between ticks in the documentation"
@@ -3935,6 +3935,7 @@ clippy::map_clone 7
 clippy::option_map_unit_fn 7
 clippy::range_plus_one 7
 clippy::invalid_upcast_comparisons 8
+clippy::needless_doctest_main 8
 clippy::needless_question_mark 8
 clippy::len_without_is_empty 9
 clippy::match_wildcard_for_single_variants 9
@@ -3942,7 +3943,6 @@ clippy::multiple_crate_versions 9
 clippy::wrong_self_convention 9
 clippy::manual_range_contains 10
 clippy::missing_safety_doc 10
-clippy::needless_doctest_main 10
 clippy::option_if_let_else 11
 clippy::needless_lifetimes 12
 clippy::linkedlist 14
@@ -3985,7 +3985,7 @@ clippy::items_after_statements 143
 clippy::module_name_repetitions 161
 clippy::expl_impl_clone_on_copy 164
 clippy::wildcard_imports 164
-clippy::doc_markdown 184
+clippy::doc_markdown 186
 clippy::missing_errors_doc 356
 clippy::unreadable_literal 365
 clippy::must_use_candidate 571
