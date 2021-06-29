@@ -1,4 +1,4 @@
-clippy 0.1.55 (e405c68 2021-06-28)
+clippy 0.1.55 (fbd77ef 2021-06-29)
 
 target/lintcheck/sources/anyhow-1.0.38/build.rs:1:null clippy::cargo_common_metadata "package `anyhow` is missing `package.keywords` metadata"
 target/lintcheck/sources/anyhow-1.0.38/src/error.rs:350:5 clippy::missing_panics_doc "docs for function which may panic missing `# Panics` section"
@@ -1612,8 +1612,6 @@ target/lintcheck/sources/cxx-1.0.32/src/shared_ptr.rs:62:20 clippy::ptr_as_ptr "
 target/lintcheck/sources/cxx-1.0.32/src/shared_ptr.rs:75:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/cxx-1.0.32/src/unique_ptr.rs:185:9 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
 target/lintcheck/sources/cxx-1.0.32/src/unwind.rs:22:5 clippy::let_underscore_drop "non-binding `let` on a type that implements `Drop`"
-target/lintcheck/sources/cxx-1.0.32/src/weak_ptr.rs:47:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
-target/lintcheck/sources/cxx-1.0.32/src/weak_ptr.rs:80:20 clippy::ptr_as_ptr "`as` casting between raw pointers without changing its mutability"
 target/lintcheck/sources/iron-0.6.1/src/error.rs:24:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/iron-0.6.1/src/error.rs:7:1 clippy::module_name_repetitions "item name ends with its containing module's name"
 target/lintcheck/sources/iron-0.6.1/src/iron.rs:105:13 clippy::redundant_field_names "redundant field names in struct initialization"
@@ -3952,12 +3950,12 @@ clippy::needless_borrow 18
 clippy::needless_pass_by_value 18
 clippy::cast_possible_wrap 19
 clippy::cast_sign_loss 19
+clippy::ptr_as_ptr 19
 clippy::unused_self 19
 clippy::unusual_byte_groupings 19
 clippy::map_unwrap_or 20
 clippy::struct_excessive_bools 20
 clippy::cargo_common_metadata 21
-clippy::ptr_as_ptr 21
 clippy::redundant_static_lifetimes 21
 clippy::cast_lossless 23
 clippy::unnested_or_patterns 25
